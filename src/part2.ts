@@ -68,6 +68,18 @@ const part2 = () => {
 		pasteList?.insertAdjacentHTML('beforeend', lastItem);
 	};
 	eleven();
+
+	const twelwe = () =>
+		document.querySelector('.instructions')!.classList.remove('shadow');
+	twelwe();
+
+	const thirteen = () => {
+		const list = document.querySelector('.instructions-list');
+		list!.children[1].innerHTML =
+			'Separera ägggulor och äggvitor. Äggvitorna lägger du i en stor bunke, äggulorna i en liten bunke.';
+		list!.children[8].innerHTML = 'Ställ in i frysen över natten.';
+	};
+	thirteen();
 };
 
 export default part2;
